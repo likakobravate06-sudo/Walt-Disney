@@ -1,0 +1,78 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    background-image:
+    url(../images/header-palace.jpg);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+}
+
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+body {
+    font-family: "BPG Glaho WEB Caps", sans-serif;
+}
+/* Menu */
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu > li > a:hover {
+    background-color: #1e5bb8;
+}
+
+/* Dropdown */
+.dropdown {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 180px;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.dropdown li a {
+    color: #333;
+    padding: 12px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show dropdown on hover */
+.menu li:hover .dropdown {
+    display: block;
+}
