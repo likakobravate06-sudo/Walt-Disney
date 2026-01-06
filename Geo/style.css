@@ -17,11 +17,18 @@
 
 
 .logo {
-    color: rgb(242, 234, 166);
-    font-size: 40px;
-    font-weight: bold;
-    text-decoration: none;
+    margin-left: 15px;
+   align-items: left;
 
+}
+
+body {
+    font-family: "BPG Glaho WEB Caps", sans-serif;
+}
+/* Menu */
+.menu {
+    list-style: none;
+    display: flex;
 }
 
 body {
@@ -64,7 +71,7 @@ body {
 }
 
 .dropdown li a {
-    color: #242323;
+    color: #e6d9d9;
     padding: 12px 15px;
     display: block;
     text-decoration: none;
@@ -72,7 +79,7 @@ body {
 }
 
 .dropdown li a:hover {
-    background-color: #f275ca;
+    background-color: #f0f0f0;
 }
 
 /* Show dropdown on hover */
