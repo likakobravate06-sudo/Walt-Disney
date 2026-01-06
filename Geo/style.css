@@ -52,25 +52,30 @@ body {
 }
 
 .menu > li > a {
-  position: relative;
   text-decoration: none;
-  color: #0077ff;
+  color: #f3f5f8;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+  position: relative;
 }
 
-.menu>li>:hover::after {
+
+.menu > li > a::after {
   content: '';
   position: absolute;
-  width: 0;
-  height: 2px;
   left: 0;
-  bottom: -2px; /* spacing below text */
-  background-color: #0077ff;
-  transition: width 0.3s ease;
+  bottom: 0;               
+  width: 0%;                
+  height: 2px;              
+  background-color: #f1f3f5;
+  transition: width 0.3s ease;  
 }
 
 a:hover::after {
-  width: 100%;
+  width: 100%;              
 }
+
+
 
 
 /* Dropdown */
