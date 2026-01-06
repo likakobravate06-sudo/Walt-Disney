@@ -92,3 +92,64 @@ section {
     background-position: center;
     background-size: cover;
 }
+
+/* Hamburger */
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile & Tablet */
+@media (max-width: 900px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: purple;
+        display: none;
+    }
+
+    /* Show menu when checked */
+    #menu-toggle:checked + .hamburger + nav {
+        display: block;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu > li > a {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    /* Dropdown mobile */
+    .dropdown {
+        position: static;
+        box-shadow: none;
+        display: none;
+    }
+
+    .menu li:hover .dropdown {
+        display: none;
+    }
+
+
+
+    .menu li > a:focus .dropdown {
+        display: block;
+    }
+}
