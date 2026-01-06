@@ -82,6 +82,9 @@ body {
     font-size: medium;
 }
 
+.menu li > a:focus + .dropdown {
+    display: block;
+
 .dropdown li a:hover {
     background-color: #ba47a9;
 }
@@ -140,10 +143,9 @@ body {
 }
 
 
-/* Hamburger */
-#menu-toggle {
-    display: none;
-}
+
+#menu-toggle:checked + .hamburger + nav { display: block; }
+
 
 .hamburger {
     display: none;
@@ -200,6 +202,11 @@ body {
         display: block;
     }
 }
+
+.menu li:focus-within .dropdown {
+    display: block;
+}
+
 
 .content {
     max-width: 1200px;
