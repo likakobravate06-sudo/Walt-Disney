@@ -127,14 +127,14 @@ body {
 }
 
 .hero h1 {
-    font-size: larger;
+    font-size: 40px;
     font-family: "BPG Nino Mtavruli Bold", sans-serif;
 }
 
 .hero p {
     font-size: medium;
     font-family: "BPG Phone Sans Italic", sans-serif;
-    margin-top: 15px;
+    margin-top: 25px;
 
 
 }
