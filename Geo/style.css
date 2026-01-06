@@ -49,30 +49,27 @@ body {
     color: white;
     text-decoration: none;
     transition: background-color 0.7s ease;
+    position: relative;
 }
 
-.menu > li > a {
-  text-decoration: none;
-  color: #f3f5f8;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.3s ease;
-  position: relative;
+.menu > li > a:hover {
+    background-color: rgba(223, 97, 223, 0.7);
 }
-
 
 .menu > li > a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;               
-  width: 0%;                
-  height: 2px;              
-  background-color: #f1f3f5;
-  transition: width 0.3s ease;  
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #ffd6ff;
+    transition: width 0.2s ease;
 }
 
-a:hover::after {
-  width: 100%;              
+.menu > li > a:hover::after {
+    width: 95%;
+    left: 2.5%;
 }
 
 
@@ -178,11 +175,6 @@ section p {
         padding: 15px;
         font-size: 20px;
     }
-    
-    .menu > li > a {
-    position: relative;
-    text-decoration: none;
-}
 
 /* underline */
 .menu > li > a::after {
