@@ -93,6 +93,10 @@ section {
                       url(../images/background1.jpg);
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 section h1 {
