@@ -64,7 +64,7 @@ body {
 }
 
 .dropdown li a {
-    color: #e6d9d9;
+    color: #242323;
     padding: 12px 15px;
     display: block;
     text-decoration: none;
@@ -72,7 +72,7 @@ body {
 }
 
 .dropdown li a:hover {
-    background-color: #f0f0f0;
+    background-color: #f275ca;
 }
 
 /* Show dropdown on hover */
