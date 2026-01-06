@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+.backgr {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7)), (rgba(4,9,30,0.7)), url( images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
 
 .header {
     background-color: purple;
@@ -72,11 +80,12 @@ body {
 }
 
 .dropdown li a {
-    color: #010101;
+    color: #f3efef;
     padding: 12px 15px;
     display: block;
     text-decoration: none;
     font-weight: bold;
+    font-size: medium;
 }
 
 .dropdown li a:hover {
