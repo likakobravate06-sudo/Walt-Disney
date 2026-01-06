@@ -34,6 +34,8 @@ body {
 .menu {
     list-style: none;
     display: flex;
+     position: relative;
+    text-decoration: none;
 }
 
 .menu > li {
@@ -50,8 +52,10 @@ body {
 }
 
 .menu > li > a:hover {
-    background-color: rgba(223, 97, 223, 0.7);
+    background-color: transparent;
 }
+
+
 
 /* Dropdown */
 .dropdown {
@@ -81,6 +85,23 @@ body {
 /* Show dropdown */
 .menu li:hover .dropdown {
     display: block;
+}
+
+.menu > li > a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    width: 0;
+    height: 3px;
+    background-color: #ffd6ff;
+    transition: all 0.4s ease;
+}
+
+/* hover effect */
+.menu > li > a:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 /* Section background */
