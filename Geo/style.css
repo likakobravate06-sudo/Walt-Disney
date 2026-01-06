@@ -16,9 +16,10 @@
 }
 
 
-.logo {
+.logo img {
+    width: 110px;
     margin-left: 15px;
-   align-items: left;
+    align-items: center;
 
 }
 
