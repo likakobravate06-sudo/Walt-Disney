@@ -12,6 +12,11 @@
     align-items: center;
     justify-content: space-between;
     font-family: Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 
@@ -24,6 +29,7 @@
 
 body {
     font-family: "BPG Glaho WEB Caps", sans-serif;
+    padding-top: 70px;
 }
 /* Menu */
 .menu {
