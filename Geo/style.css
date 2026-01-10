@@ -126,6 +126,13 @@ section:not(.article1) {
                       url(../images/background1.jpg);
 }
 
+section.article1 {
+    min-height: auto;
+    background-image: none;
+    background-color: transparent;
+    padding: 60px 20px;
+}
+
 section h1 {
 
     font-size: 40px;
@@ -248,64 +255,51 @@ section p {
     max-width: 700px;
 }
 
-/* Desktop: text and image side by side */
-.article1 {
-    display: flex;
-    align-items: center;        /* vertically center text and image */
-    justify-content: space-between;
-    padding: 60px 80px;         /* space from edges */
-    gap: 40px;                  /* space between text and image */
-    flex-wrap: wrap;            /* allows stacking on smaller screens */
-    background-color: white;    /* optional, can remove if needed */
-}
+ .card {
+            display: flex;
+            align-items: center; /* vertical alignment */
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            gap: 30px;
+        }
 
-/* Text container acts like a "box" but invisible */
-.article1 .text-container {
-    flex: 1;                    /* take left half */
-    min-width: 300px;           /* prevent shrinking too much */
-    padding-right: 40px;        /* spacing between text and image */
-}
+        .text-content {
+            flex: 1;
+        }
 
-/* Headline */
-.article1 .content {
-    font-size: 28px;
-    color: #f5f3f3;
-    margin-bottom: 20px;
-}
+        .text-content h1 {
+            margin: 0 0 15px 0;
+            font-size: 28px;
+            color: #222;
+        }
 
-/* Paragraph */
-.article1 .content1 {
-    font-size: 18px;
-    color: #e8dbdb;
-    line-height: 1.6;
-}
+        .text-content p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #3a3535;
+        }
 
-/* Image on the right */
-.article1 .img1 {
-    flex: 1;                    /* take right half */
-    max-width: 500px;           /* max size */
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;         /* optional: smooth corners */
-}
+        .card img {
+            width: 280px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
 
-/* Mobile layout: stack text and image */
-@media (max-width: 900px) {
-    .article1 {
-        flex-direction: column;  /* stack vertically */
-        padding: 40px 20px;      /* smaller padding on mobile */
-        gap: 30px;
-    }
+        /* Responsive layout */
+        @media (max-width: 768px) {
+            .card {
+                flex-direction: column;
+                text-align: center;
+            }
 
-    .article1 .text-container {
-        padding-right: 0;
-        text-align: center;      /* center text on mobile */
-    }
-
-    .article1 .img1 {
-        max-width: 100%;         /* image fills width */
-        height: auto;
-    }
-}
+            .card img {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
 
