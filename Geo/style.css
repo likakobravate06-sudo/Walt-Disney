@@ -7,6 +7,11 @@
 body {
     font-family: "BPG Glaho WEB Caps", sans-serif;
     padding-top: 90px;
+    background-image: linear-gradient(rgba(4,9,30,0.7)), url(../images/background1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Header */
@@ -105,7 +110,7 @@ body {
     display: block;
 }
 
-/* Section background */
+
 section {
     min-height: 100vh;
     width: 100%;
@@ -122,14 +127,16 @@ section {
 
 section:not(.article1) {
     min-height: 100vh;
-    background-image: linear-gradient(rgba(4,9,30,0.7)), 
-                      url(../images/background1.jpg);
+  
 }
 
 section.article1 {
-    min-height: auto;
-    background-image: none;
-    background-color: transparent;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 60px 20px;
 }
 
