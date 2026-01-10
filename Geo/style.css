@@ -113,15 +113,22 @@ section {
                       url(../images/background1.jpg);
     background-position: center;
     background-size: cover;
+        background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+section:not(.article1) {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7)), 
+                      url(../images/background1.jpg);
+}
+
 section h1 {
 
-    font-size: 50px;
+    font-size: 40px;
     color: white;
     position: relative;
     text-align: center;
@@ -241,4 +248,64 @@ section p {
     max-width: 700px;
 }
 
+/* Desktop: text and image side by side */
+.article1 {
+    display: flex;
+    align-items: center;        /* vertically center text and image */
+    justify-content: space-between;
+    padding: 60px 80px;         /* space from edges */
+    gap: 40px;                  /* space between text and image */
+    flex-wrap: wrap;            /* allows stacking on smaller screens */
+    background-color: white;    /* optional, can remove if needed */
+}
+
+/* Text container acts like a "box" but invisible */
+.article1 .text-container {
+    flex: 1;                    /* take left half */
+    min-width: 300px;           /* prevent shrinking too much */
+    padding-right: 40px;        /* spacing between text and image */
+}
+
+/* Headline */
+.article1 .content {
+    font-size: 28px;
+    color: #f5f3f3;
+    margin-bottom: 20px;
+}
+
+/* Paragraph */
+.article1 .content1 {
+    font-size: 18px;
+    color: #e8dbdb;
+    line-height: 1.6;
+}
+
+/* Image on the right */
+.article1 .img1 {
+    flex: 1;                    /* take right half */
+    max-width: 500px;           /* max size */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;         /* optional: smooth corners */
+}
+
+/* Mobile layout: stack text and image */
+@media (max-width: 900px) {
+    .article1 {
+        flex-direction: column;  /* stack vertically */
+        padding: 40px 20px;      /* smaller padding on mobile */
+        gap: 30px;
+    }
+
+    .article1 .text-container {
+        padding-right: 0;
+        text-align: center;      /* center text on mobile */
+    }
+
+    .article1 .img1 {
+        max-width: 100%;         /* image fills width */
+        height: auto;
+    }
+}
 
