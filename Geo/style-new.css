@@ -250,7 +250,8 @@ section p {
 
 .card img {
     display: block;
-    max-width: 100%;
+    max-width: 200px;
+    height: auto;
     margin: 40px auto;
     border-radius: 14px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
@@ -275,64 +276,72 @@ section p {
     }
 }
 
-h1, h2, h3 {
-        margin: 0;
-    }
+/* ===== TOPICS CONTAINER ===== */
+.topic {
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
 
-    /* ===== TOPICS CONTAINER ===== */
-    .topics-container {
-        max-width: 1000px;
-        margin: 50px auto;
-        padding: 0 20px;
-        display: flex;
+/* IMAGE */
+.topic-image {
+    flex: 0 0 150px;
+}
+
+.topic-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+/* TEXT */
+.topic-text {
+    flex: 1;
+}
+
+.topic-text h2 {
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.topic-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* ALTERNATING LAYOUT */
+.topic:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .topic {
         flex-direction: column;
-        gap: 40px;
+        padding: 20px;
     }
 
-    /* ===== INDIVIDUAL TOPIC BOX ===== */
-    .topic-box {
-        background-color: #fff;
-        border-radius: 12px;
-        padding: 20px 25px;
-        box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-        display: flex;
+    .topic:nth-of-type(even) {
         flex-direction: column;
-        gap: 15px;
-        transition: transform 0.2s ease;
     }
 
-    /* Hover effect (optional) */
-    .topic-box:hover {
-        transform: translateY(-4px);
+    .topic-image {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
     }
 
-    /* IMAGE */
-    .topic-box img {
-        width: 180px;
-        height: auto;
-        border-radius: 8px;
-        align-self: right;
+    .topic-text p {
+        max-width: 100%;
     }
-
-    /* TITLE */
-    .topic-box h2 {
-        font-size: 22px;
-        color: #222;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-    /* TEXT */
-    .topic-box p {
-        font-size: 16px;
-        line-height: 1.6;
-        color: #444;
-    }
-
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 768px) {
-        .topic-box img {
-            width: 100%;
-            max-width: 280px;
-        }
-    }
+}
