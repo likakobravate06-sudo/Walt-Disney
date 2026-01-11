@@ -389,3 +389,77 @@ section.article1:first-of-type p {
         font-size: 16px;
     }
 }
+
+/* Footer Layout */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px; /* space between menu and contact */
+    flex-wrap: wrap;
+}
+
+/* Menu */
+.footer-menu {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-menu h3 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+    line-height: 2.2;
+}
+
+.footer-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    margin: 5px 0;
+}
+
+/* Contact Info */
+.footer-contact {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-contact h3 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.footer-contact p {
+    color: #f0e6f7;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.social-logos {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-logos img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+img.tbc-seeklogo {
+    width: 400px;
+    height: 400px;
+    
+}
+
+
+
