@@ -455,11 +455,13 @@ section.article1:first-of-type p {
     object-fit: contain;
 }
 
-img.tbc-seeklogo {
+.social-logos img.tbc-seeklogo {
     width: 400px;
     height: 400px;
-    
+    object-fit: contain;
 }
+
+
 
 
 
