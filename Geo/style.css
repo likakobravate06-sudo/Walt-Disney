@@ -470,5 +470,68 @@ text-align: center;
 }
 
 
+/* ========================= */
+/* 📱 TABLET & PHONE ONLY */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-menu,
+    .footer-contact {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .social-logos {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-contact p {
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* ========================= */
+/* 📱 SMALL PHONES ONLY */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+    .social-logos img {
+        width: 31px;
+        height: 31px;
+    }
+}
+
+@media (max-width:480px)
+{
+   .tbc-seeklogo{
+    width: 60px;
+    height: 60px;
+   }
 
 
+}
+/* 📱 TABLET & PHONE */
+@media (max-width: 768px) {
+
+    .footer-contact p {
+        font-size: 16px;
+    }
+}
+
+/* 📱 SMALL PHONES */
+@media (max-width: 480px) {
+
+    .footer-contact p {
+        font-size: 15px;
+    }
+}
