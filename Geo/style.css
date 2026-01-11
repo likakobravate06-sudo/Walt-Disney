@@ -536,6 +536,70 @@ text-align: center;
     }
 }
 
+
+
+
+.why-section {
+  padding: 60px 5%;
+   min-height: 100vh;
+  padding: 6rem 1rem;
+
+  background-image:
+    linear-gradient(rgba(101, 102, 104, 0.7), rgba(106, 107, 112, 0.7)),
+    url("../images/baloo.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+
+.why-section h2 {
+    position: left;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color:#ffd700;
+  font-weight:bold;
+  
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+ 
+}
+
+.info-bar img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.info-bar h3 {
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+  color: white;
+}
+
+.info-bar p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #fcf7f7;
+  display: flex;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 /* ===== BACKGROUND SECTION ===== */
 .for-background1 {
   min-height: 100vh;
