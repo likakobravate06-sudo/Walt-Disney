@@ -407,7 +407,7 @@ section.article1:first-of-type p {
 
 .footer-menu h3 {
     color: white;
-    font-size: 22px;
+    font-size: 26px;
     margin-bottom: 20px;
 }
 
@@ -420,7 +420,7 @@ section.article1:first-of-type p {
 .footer-menu ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 23px;
     display: block;
     margin: 5px 0;
 }
@@ -433,20 +433,21 @@ section.article1:first-of-type p {
 
 .footer-contact h3 {
     color: white;
-    font-size: 22px;
+    width: 27px;
     margin-bottom: 15px;
 }
 
 .footer-contact p {
     color: #f0e6f7;
-    font-size: 16px;
+    font-size: 24px;
     margin: 5px 0;
 }
 
 .social-logos {
-    margin-top: 10px;
+    margin-top: 0px;
     display: flex;
     gap: 15px;
+    align-items: center;
 }
 
 .social-logos img {
@@ -456,11 +457,17 @@ section.article1:first-of-type p {
 }
 
 .social-logos img.tbc-seeklogo {
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
     object-fit: contain;
 }
 
+div.footer-copy {
+font-size: 20px;
+color: white;
+text-align: center;
+
+}
 
 
 
