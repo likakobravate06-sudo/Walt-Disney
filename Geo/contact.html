@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Walt Disney</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -36,7 +36,7 @@
                 <ul class="dropdown">
                     <li><a href="animation.html">ანიმაციური</a></li>
                     <li><a href="live.html">ლაივ აქშენი</a></li>
-                    <li><a href="upcoming.html">სამომავლო</a></li>
+                    
                 </ul>
             </li>
 
@@ -48,10 +48,112 @@
     </nav>
 </header>
 
+  <section class="contact-container">
+    
+    <h1>ველოდებით კითხვებს თგვენგან </h1>
+    <p class="intro">
+      გაქვთ შეკითხვა, უკუკავშირი? შეავსეთ ქვემოთ მოცემული ფორმა და ჩვენ რაც შეიძლება მალე დაგიკავშირდებით.
+    </p>
+
+    <div class="contact-grid">
+
+   
+      <form class="contact-form">
+        <label>
+          სახელი
+          <input type="text" name="name" placeholder="Your full name" required>
+        </label>
+
+        <label>
+          მეილის მისამართი
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+
+        <label>
+          თემა
+          <select name="subject" required>
+            <option value="">აირჩიეთ თემა</option>
+            <option value="support">მხარდაჭერა</option>
+            <option value="feedback">უკუკავშირი</option>
+            <option value="general"> შეკითხვა</option>
+          </select>
+        </label>
+
+        <label>
+          შეტყობინება
+          <textarea name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        </label>
+
+        <button type="submit">გააგზავნეთ მესიჯი</button>
+      </form>
 
 
+      <div class="contact-info">
+        <h2>საკონტაქტო ინფორმაცია</h2>
 
-</body>
+        <p>
+          📧 <strong>Email:</strong><br>
+          <a href="mailto:info@mywebsiteaboutdisney.com">info@mywebsiteaboutdisney.com</a>
+        </p>
+
+        <p>
+          📍 <strong>ლოკაცია:</strong><br>
+            თბილისი, მარჯანიშვილის ქ.15
+        </p>
+
+        <p>
+          ⏱ <strong>პასუხის მიღება:</strong><br>
+          პასუხს მიიღებთ 24 საათის განმავლობაში
+        </p>
+
+        <div class="social-links">
+         
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+<footer style="background-color:#884478; color:#fff; padding:40px 20px; font-family:sans-serif;">
+  <div class="footer-container">
+
+    <!-- Menu -->
+    <div class="footer-menu">
+      <h3>მენიუ</h3>
+      <ul>
+        <li><a href="about.html">🏠 მთავარი</a></li>
+        <li><a href="news.html">📰 სიახლეები</a></li>
+        <li><a href="animation.html">🎬 ანიმაციები</a></li>
+        <li><a href="live.html">🎭 ლაივ-ექშენები</a></li>
+        <li><a href="contact.html">📞 საკონტაქტო</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info Next to Menu -->
+    <div class="footer-contact">
+      <h3>დაგვიკავშირდით</h3>
+      <p>Email: info@mywebsiteaboutdisney.com</p>
+      <p>Phone: +995 598 612 632</p>
+      <div class="social-logos">
+        <img src="../images/icons8-instagram-96.png" alt="Instagram">
+        <img src="../images/icons8-facebook-96.png" alt="Facebook">
+        <img src="../images/Gmail_Logo_64px.png" alt="Gmail">
+        <img class="tbc-seeklogo" src="../images/tbc-bank-seeklogo.png" alt="TBC">
+      </div>
+    </div>
+
+  </div>
+
+
+  
+  <div class="footer-copy">
+    © 2026 Walt Disney
+  </div>
+</footer>
+
 </html>
-
 
