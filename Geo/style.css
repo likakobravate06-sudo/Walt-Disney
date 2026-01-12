@@ -686,6 +686,25 @@ text-align: center;
   }
 }
 
+.animations {
+
+     min-height: 100vh;
+  padding: 6rem 1rem;
+
+  background-image:
+    linear-gradient(rgba(101, 102, 104, 0.7), rgba(106, 107, 112, 0.7)),
+    url("../images/pooh.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  /* IMPORTANT: allow normal document flow */
+  display: block;
+
+}
+
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
