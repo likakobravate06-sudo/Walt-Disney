@@ -1,54 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">  
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <meta charset="UTF-8">
-    <title>Walt Disney</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Walt Disney - მთავარი</title>
     <link rel="stylesheet" href="style.css">
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-<header class="header">
-    <div class="logo">
-        Walt Disney
-    </div>
+ 
+<header class="header">       
+    <div class="logo">Walt Disney</div>
 
     <input type="checkbox" id="menu-toggle">
-<label for="menu-toggle" class="hamburger">
-    ☰
-</label>
-
+    <label for="menu-toggle" class="hamburger">☰</label>
 
     <nav class="navbar">
-        <ul class="menu">
-            <li>
-                <a href="about.html">მთვარი</a>
-               
-            </li>
-
-            <li>
-                <a href="news.html">სიახლეები</a>
-                
-                
-            </li>
-
-            <li>
-                <a href="animation.html">ფილმები</a>
-                <ul class="dropdown">
-                    <li><a href="animation.html">ანიმაციური</a></li>
-                    <li><a href="live.html">ლაივ აქშენი</a></li>
-                    
-                </ul>
-            </li>
-
-            <li>
-                <a href="contact.html">საკონტაქტო</a>
-                
-            </li>
+       <ul class="menu">
+    <li><a href="index.html">მთავარი</a></li>
+    <li><a href="about.html">ჩვენს შესახებ</a></li>  
+    <li>
+        <a href="#">სერვისები</a>  
+        <ul class="dropdown">
+            <li><a href="animation.html">ანიმაციური</a></li>
+            <li><a href="live.html">ლაივ აქშენი</a></li>
         </ul>
+    </li>
+    <li><a href="news.html">სიახლეები</a></li>
+    <li><a href="contact.html">კონტაქტი</a></li>
+</ul>
     </nav>
 </header>
 
- <section class="contact-container">
+<section class="contact-container">
 
   <h1>ველოდებით კითხვებს თქვენგან</h1>
   <p class="intro">
@@ -95,7 +82,7 @@
         </a>
       </p>
 
-      <p>📍 <strong>ლოკაცია:</strong><br>
+      <p> <strong>ლოკაცია:</strong><br>
         თბილისი, მარჯანიშვილის ქ.15
       </p>
 
@@ -113,14 +100,16 @@
 </section>
 
 
-<footer style="background-color:#884478; color:#fff; padding:40px 20px; font-family:sans-serif;">
-  <div class="footer-container">
 
-    <!-- Menu -->
+
+
+
+<footer>
+  <div class="footer-container">
     <div class="footer-menu">
       <h3>მენიუ</h3>
       <ul>
-        <li><a href="about.html">🏠 მთავარი</a></li>
+        <li><a href="index.html">🏠 მთავარი</a></li>
         <li><a href="news.html">📰 სიახლეები</a></li>
         <li><a href="animation.html">🎬 ანიმაციები</a></li>
         <li><a href="live.html">🎭 ლაივ-ექშენები</a></li>
@@ -128,27 +117,26 @@
       </ul>
     </div>
 
-    <!-- Contact Info Next to Menu -->
     <div class="footer-contact">
       <h3>დაგვიკავშირდით</h3>
       <p>Email: info@mywebsiteaboutdisney.com</p>
       <p>Phone: +995 598 612 632</p>
+      
+     
       <div class="social-logos">
-        <img src="../images/icons8-instagram-96.png" alt="Instagram">
-        <img src="../images/icons8-facebook-96.png" alt="Facebook">
-        <img src="../images/Gmail_Logo_64px.png" alt="Gmail">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a> 
+
         <img class="tbc-seeklogo" src="../images/tbc-bank-seeklogo.png" alt="TBC">
       </div>
     </div>
-
   </div>
-
-
   
   <div class="footer-copy">
-    © 2026 Walt Disney
+    © 2026 Walt Disney. All Rights Reserved.
   </div>
 </footer>
 
-</html>
-
+</body>
+</html>   

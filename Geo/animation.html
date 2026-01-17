@@ -1,57 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">  
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <meta charset="UTF-8">
-    <title>Walt Disney</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Walt Disney - მთავარი</title>
     <link rel="stylesheet" href="style.css">
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-<header class="header">
-    <div class="logo">
-        Walt Disney
-    </div>
+ 
+<header class="header">       
+    <div class="logo">Walt Disney</div>
 
     <input type="checkbox" id="menu-toggle">
-<label for="menu-toggle" class="hamburger">
-    ☰
-</label>
-
+    <label for="menu-toggle" class="hamburger">☰</label>
 
     <nav class="navbar">
         <ul class="menu">
-            <li>
-                <a href="about.html">მთვარი</a>
-               
+    <li><a href="index.html">მთავარი</a></li>
+    <li><a href="about.html">ჩვენს შესახებ</a></li>  
+    <li>
+        <a href="#">სერვისები</a>  
+        <ul class="dropdown">
+            <li><a href="animation.html">ანიმაციური</a></li>
+            <li><a href="live.html">ლაივ აქშენი</a></li>
+        </ul>
+    </li>
+    <li><a href="news.html">სიახლეები</a></li>
+    <li><a href="contact.html">კონტაქტი</a></li>
+</ul>
             </li>
-
-            <li>
-                <a href="news.html">სიახლეები</a>
-                
-                
-            </li>
-
-            <li>
-                <a href="animation.html">ფილმები</a>
-                <ul class="dropdown">
-                    <li><a href="animation.html">ანიმაციური</a></li>
-                    <li><a href="live.html">ლაივ აქშენი</a></li>
-                    
-                </ul>
-            </li>
-
-            <li>
-                <a href="contact.html">საკონტაქტო</a>
-                
-            </li>
+            <li><a href="contact.html">საკონტაქტო</a></li>
         </ul>
     </nav>
 </header>
 
+
 <section class="animations">
      <div class="gallery">
-
-        <!-- Mickey Mouse Short Films -->
+ 
 <div class="image-box">
   <img src="../img animations/steamboat.jpg" class="image">
   <div class="text-overlay">გემთწამყვანი ვილი (1928)</div>
@@ -63,8 +53,7 @@
   <div class="text-overlay">მიკი მაუსი  (1928–1953)</div>
   <div class="hover-text">მიკი მაუსის ორიგინალურმა მოკლემეტრაჟიანმა ფილმებმა ჩამოაყალიბა დისნეის ანიმაციური სტილი და თხრობის რიტმი. ეს მულტფილმები გამოირჩეოდა სლაპსტიკური (უხეში) იუმორით, ექსპრესიული ანიმაციითა და მარტივი თავგადასავლებით. დროთა განმავლობაში მიკი ცელქი მაწანწალიდან მეგობრულ გმირად გარდაიქმნა. ამ სერიებმა დისნეის პერსონაჟთა ანიმაციისა და ტაიმინგის დახვეწაში შეუწყო ხელი. ბევრი კლასიკური პერსონაჟი, როგორიცაა მინი, პლუტო და გუფი, რეგულარულად ჩნდებოდა ეკრანზე. ამ მულტფილმებმა ჩაუყარა საფუძველი დისნეის მთელ მომავალ ანიმაციას.</div>
 </div>
-
-<!-- Disney Feature Films -->
+ 
 <div class="image-box">
   <img src="../img animations/Snow-White-and-the-Seven-Dwarfs.jpg" class="image">
   <div class="text-overlay">ფიფქია და შვიდი ჯუჯა (1937)</div>
@@ -583,25 +572,12 @@
 
 
 
-
-
-
-
-</body> 
-
-
-
-
-
-
-<footer style="background-color:#884478; color:#fff; padding:40px 20px; font-family:sans-serif;">
+<footer>
   <div class="footer-container">
-
-    <!-- Menu -->
     <div class="footer-menu">
       <h3>მენიუ</h3>
       <ul>
-        <li><a href="about.html">🏠 მთავარი</a></li>
+        <li><a href="index.html">🏠 მთავარი</a></li>
         <li><a href="news.html">📰 სიახლეები</a></li>
         <li><a href="animation.html">🎬 ანიმაციები</a></li>
         <li><a href="live.html">🎭 ლაივ-ექშენები</a></li>
@@ -609,27 +585,26 @@
       </ul>
     </div>
 
-    <!-- Contact Info Next to Menu -->
     <div class="footer-contact">
       <h3>დაგვიკავშირდით</h3>
       <p>Email: info@mywebsiteaboutdisney.com</p>
       <p>Phone: +995 598 612 632</p>
+      
+   
       <div class="social-logos">
-        <img src="../images/icons8-instagram-96.png" alt="Instagram">
-        <img src="../images/icons8-facebook-96.png" alt="Facebook">
-        <img src="../images/Gmail_Logo_64px.png" alt="Gmail">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        
         <img class="tbc-seeklogo" src="../images/tbc-bank-seeklogo.png" alt="TBC">
       </div>
     </div>
-
   </div>
-
-
   
   <div class="footer-copy">
-    © 2026 Walt Disney
+    © 2026 Walt Disney. All Rights Reserved.
   </div>
 </footer>
 
-</html>
-
+</body>
+</html> ...

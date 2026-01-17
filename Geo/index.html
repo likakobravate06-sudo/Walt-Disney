@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walt Disney - მთავარი</title>
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- FontAwesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- SECTION 1: HEADER -->
+<header class="header">       
+    <div class="logo">Walt Disney</div>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">☰</label>
+
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="index.html">მთავარი</a></li>
+            <li><a href="about.html">ჩვენს შესახებ</a></li> <!-- ახალი გვერდი -->
+            <li>
+                <a href="#">ფილმები</a>
+                <ul class="dropdown">
+                    <li><a href="animation.html">ანიმაციური</a></li>
+                    <li><a href="live.html">ლაივ აქშენი</a></li>
+                </ul>
+            </li>
+            <li><a href="news.html">სიახლეები</a></li>
+            <li><a href="contact.html">კონტაქტი</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<section class="hero">
+    <h1>უოლტ დისნეის სამყარო</h1>
+    <p>„იმედი მაქვს, რომ არასდროს დაგვავიწყდება, რომ ეს ყველაფერი დაიწყო თაგვით.“</p>
+    <a href="about.html" class="btn">გაიგე მეტი ჩვენს შესახებ</a>
+</section>
+
+
+<section class="article1" style="min-height: auto; padding: 50px 20px;">
+    <div class="card" style="text-align: center;">
+        <h2 style="margin-top: 0;">ვინ ვართ ჩვენ?</h2>
+        <p style="margin: 20px auto; float: none;">
+            უოლტ დისნეის კომპანია არის მსოფლიოში წამყვანი გასართობი და მედია კორპორაცია.
+            ჩვენი ისტორია იწყება 1923 წლიდან, როდესაც ძმებმა დისნეებმა პატარა ანიმაციური სტუდია დააარსეს.
+            დღეს ჩვენ ვქმნით მაგიას, რომელიც აერთიანებს თაობებს.
+        </p>
+        <a href="about.html" class="btn">სრული ისტორია</a>
+    </div>
+</section>
+
+<!-- SECTION 4: MOVIES TEASER (ფილმების გზამკვლევი) -->
+<section class="movies-teaser">
+    <h2>აღმოაჩინე ჩვენი ფილმები</h2>
+    <div class="info-grid">
+        <!-- Animation Link -->
+        <div class="info-bar">
+            <img src="../img animations/lionking.jpg" alt="Animations">
+            <h3>ანიმაციური სამყარო</h3>
+            <p>კლასიკური და თანამედროვე ანიმაციები, რომლებმაც შეცვალეს სამყარო.</p>
+            <a href="animation.html" class="btn">ნახე ანიმაციები</a>
+        </div>
+
+        <!-- Live Action Link -->
+        <div class="info-bar">
+            <img src="../img animations/mermaidfilm.jpg" alt="Live Action">
+            <h3>ლაივ-ექშენ ფილმები</h3>
+            <p>ეპიკური თავგადასავლები და რეალისტური კინემატოგრაფია.</p>
+            <a href="live.html" class="btn">ნახე ფილმები</a>
+        </div>
+
+        <!-- News Link -->
+        <div class="info-bar">
+            <img src="../images/technology.jpg" alt="News">
+            <h3>სიახლეები</h3>
+            <p>გაიგე რა ხდება დისნეის სამყაროში დღეს და რა გველის მომავალში.</p>
+            <a href="news.html" class="btn">წაიკითხე სიახლეები</a>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 5: STATS (სტატისტიკა) -->
+<section class="stats-section">
+    <div class="stats-container">
+        <div class="stat-box">
+            <h3>1923</h3>
+            <p>დაარსების წელი</p>
+        </div>
+        <div class="stat-box">
+            <h3>12</h3>
+            <p>თემატური პარკი</p>
+        </div>
+        <div class="stat-box">
+            <h3>100+</h3>
+            <p>წლის ისტორია</p>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 6: FOOTER -->
+<footer>
+  <div class="footer-container">
+
+    <div class="footer-menu">
+      <h3>მენიუ</h3>
+      <ul>
+        <li><a href="index.html">🏠 მთავარი</a></li>
+        <li><a href="about.html">ℹ️ ჩვენს შესახებ</a></li>
+        <li><a href="animation.html">🎬 ანიმაციები</a></li>
+        <li><a href="news.html">📰 სიახლეები</a></li>
+        <li><a href="contact.html">📞 საკონტაქტო</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>დაგვიკავშირდით</h3>
+      <p>Email: info@mywebsiteaboutdisney.com</p>
+      <p>Phone: +995 598 612 632</p>
+      
+      <!-- FontAwesome Icons -->
+      <div class="social-logos">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        <!-- TBC Logo -->
+        <img class="tbc-seeklogo" src="../images/tbc-bank-seeklogo.png" alt="TBC">
+      </div>
+    </div>
+
+  </div>
+  
+  <div class="footer-copy">
+    © 2026 Walt Disney. All Rights Reserved.
+  </div>
+</footer>
+
+</body>
+</html>
